@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 //create another HTTP REQUEST for server for sending a career form, maybe called /sendCareerForm
 
 app.post('/send', async (req, res) => {
-    console.log("Hello");
     const { name, email, message } = req.body;
 
     let transporter = nodemailer.createTransport({
