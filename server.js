@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 app.post('/send', async (req, res) => {
     const { name, email, message } = req.body;
-
+    console.log("Sending message to company...");
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
