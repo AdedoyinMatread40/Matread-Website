@@ -42,6 +42,7 @@ app.post('/send', async (req, res) => {
         console.error('Error sending the mail', error);
         res.status(500).send('Server error');
     }
+    console.log("Ok, message sent");
 });
 
 app.post('/send-form', upload.single("file"), async (req, res) => {
