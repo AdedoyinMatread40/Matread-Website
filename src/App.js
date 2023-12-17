@@ -5,7 +5,7 @@ import AboutUsPage from './AboutUs'
 import CareersPage from './Careers';
 import ContactUsPage from './ContactUs';
 import ServicesPage from './Services';
-import CareersForm from './Components/CareerForm';
+import AboutDescription from './Components/AboutDescription';
 
 function App() {
     
@@ -17,7 +17,7 @@ function App() {
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/contact-us" element={<ContactUsPage />} />
                 <Route path="/careers" element={<CareersPage />} />
-                <Route path="/career-form" element={<CareersForm />} />
+                <Route path="/about-us-info" element={<AboutDescription />} />
             </Routes>
         </Router>
     );
