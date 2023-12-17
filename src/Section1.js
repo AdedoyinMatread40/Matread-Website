@@ -7,11 +7,11 @@ function Section1() {
   return (
     <div className="section1">
       <div className="header">
+        <div className="company_image">
         <Link to="/">
           <img src={familyImage} id="companyLogo" alt="family"></img>
         </Link>
-        <h1>Matread Care</h1>
-        <div id="vert-line"></div>
+        </div>
         <div className="navbar">
           <Link to="/" className="nav-link">
             Home

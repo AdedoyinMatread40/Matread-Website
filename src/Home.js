@@ -11,12 +11,21 @@ import img3 from './images/PICSLIDER2.jpg';
 import img4 from './images/PICSLIDER3.jpg';
 import img5 from './images/PICSLIDER4.jpg';
 import whiteBack from './images/WHITE3.jpg';
+import HomePageBanner from './Components/HomePageBanner';
+//import backgroundVideo from './videos/background-video-for-home.mp4';
 
 const images = [img1, img2, img3, img4, img5];
 
+/*
 function Section2(){
   return(
     <div className="section2">
+      <div className="video-container">
+      <video autoPlay loop muted id="video">
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+
+      </div>
         
         <div id="quote">
       <p className="quote-text">Alone we can do so little, together we can do so much</p>
@@ -27,6 +36,7 @@ function Section2(){
 
   );
 }
+*/
 
 function Section3(){
   const [current, setCurrent] = useState(0); // [initial image to be shown, function used to update it] 
@@ -150,7 +160,7 @@ function HomePage() {
       </div>
       
       <div>
-        <Section2 />
+        <HomePageBanner />
       </div>
       
       <div>

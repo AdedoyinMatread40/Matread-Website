@@ -1,22 +1,14 @@
 /* Style for the company logo */
 #companyLogo{
-  margin-left: 60%;
-  height: 30%;
-  width: 30%;
+  margin-left: 20%;
+  height: 28%;
+  width: 27%;
   margin-right: 1%;  /* creates some space between the logo and the name */
 }
 
-/* Style for main headers */
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.9em;
-  color: #0e61b9;  /* changing the color to a soft blue */
-  margin-right: 30%;
-  letter-spacing: 1%; /* increasing the spacing between letters */
-  transform: skewX(-10deg);  /* slant the text */
-  white-space: nowrap;  /* Prevents wrapping, keeping text on a single line */
-  clear: both;
-  display: inline-block;
+.company_image a{
+  margin: 0;
+  padding: 0;
 }
 
 /* Header container style */
@@ -27,21 +19,12 @@ h1 {
   padding: 0%;
 }
 
-#vert-line{
-  border-left: 1px solid #b1b1b3; /* This creates the line */
-  height: 60px; /* Adjust based on how tall you want the line to be */
-  position: absolute;
-  left: 56%; /* Adjust this to move the line left or right */
-  top: 3.5%; /* Adjust this to move the line up or down */
-  
-}
-
 /* Navbar styling */
 .navbar {
   list-style-type: none;  /* remove bullets */
   text-align: right;
   width: 50%;
-  margin-right: 8%;
+  margin-right: 30%;
   padding: 0%;  /* some vertical padding */
   background-color: #ffffff;
   flex-wrap: no-wrap; /* Prevents wrapping of navbar items */
@@ -88,7 +71,7 @@ h1 {
 }
 
 .section2 {
-  height: 720%;
+  height: 100vh;
   font-family: "Shadows Into Light", cursive;
   font-size: 3.0em;
   display: flex;
@@ -98,11 +81,31 @@ h1 {
   padding: 10%;
   border-radius: 0px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  background-size: cover;
-  background-position: center;
-  background: linear-gradient(to right, #006199, white);
+  position: relative;
+  
 }
 
+/*
+.video-container{
+  margin-top: 1%;
+  overflow: hidden;
+  display: block;
+  height: 120vh;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+.video-container video{
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/*
 .quote-text {
   margin-bottom: 10%;
   position: relative;
@@ -138,6 +141,7 @@ h1 {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+*/
 
 .header_3{
   color: #333333;
