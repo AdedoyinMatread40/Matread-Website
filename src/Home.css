@@ -24,7 +24,7 @@
   list-style-type: none;  /* remove bullets */
   text-align: right;
   width: 50%;
-  margin-right: 30%;
+  margin-right: 25%;
   padding: 0%;  /* some vertical padding */
   background-color: #ffffff;
   flex-wrap: no-wrap; /* Prevents wrapping of navbar items */
