@@ -6,9 +6,9 @@ import ResponsiveDialog from './ResponsiveDialog.js';
 
 
 function CareerForm(){
+    const[isModalOpen, setModalOpen] = useState(false);
 
     const[loading, setLoading] = useState(false);
-    const [open, setOpen] = useState(false);
 
     const[name, setName] = useState("");
     const[email, setEmail] = useState("");
@@ -42,7 +42,7 @@ function CareerForm(){
                 setAddress("");
                 setPhone("");
                 setLoading(false);
-                setOpen(true);
+                setModalOpen(true);
 
                 if(inputFile.current){
                     inputFile.current.value = "";
@@ -114,7 +114,12 @@ function CareerForm(){
             </div>
 
             <div>
-                {open ? <ResponsiveDialog /> : <></>}
+                {isModalOpen && (
+                    <ResponsiveDialog onClose={() => setModalOpen(false)}>
+                        <h2>Career Form</h2>
+                        <p>Application successfully submitted</p>
+                    </ResponsiveDialog>
+                )}
             </div>
             
         </div>

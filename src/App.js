@@ -6,6 +6,8 @@ import CareersPage from './Careers';
 import ContactUsPage from './ContactUs';
 import ServicesPage from './Services';
 import HomePageBanner from './Components/HomePageBanner';
+import ResponsiveDialog from './Components/ResponsiveDialog';
+import CareerForm from './Components/CareerForm';
 
 function App() {
     
@@ -18,6 +20,8 @@ function App() {
                 <Route path="/contact-us" element={<ContactUsPage />} />
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/video" element={<HomePageBanner />} />
+                <Route path="/dialog" element={<ResponsiveDialog />} />
+                <Route path="/career-form" element={<CareerForm />} />
             </Routes>
         </Router>
     );

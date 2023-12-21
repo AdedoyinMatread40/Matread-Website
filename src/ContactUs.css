@@ -15,7 +15,7 @@
 }
 
 .contact-section{
-    min-height: 80vh;
+    min-height: 100vh;
     font-family: "Playfair Display", serif;
     display: flex;
     justify-content: flex-end;
@@ -117,7 +117,8 @@
 }
 
 .input-group{
-  margin-bottom: 10%;
+  
+  margin-top: 4%;
 }
 
 .input-group textarea#message{
@@ -135,7 +136,7 @@
 }
 
 .button-group {
-    margin-top: 0%; /* Add some space above the button */
+    margin-top: 5%; /* Add some space above the button */
 }
 
 .button-group{
@@ -179,7 +180,7 @@
   display: flex;
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.986);
-  margin-top: 180px;
+  margin-top: 0%;
   position: relative;
   padding: 40px;
   border-radius: 0px;

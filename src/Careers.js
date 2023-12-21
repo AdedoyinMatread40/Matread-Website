@@ -12,7 +12,7 @@ function PageTitle(){
 
 function Section5(){
     return(
-        <div className="section-5">
+        <div className="section-5" style={{marginTop: "0%"}}>
             <div className="companyInfo">
               {companyInfo && (
                 <>

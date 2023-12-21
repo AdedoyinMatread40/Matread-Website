@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import Section1 from './Section1';
 import './ContactUs.css';
 import whiteBack from './images/WHITE3.jpg';
@@ -7,7 +7,8 @@ import { faHouseUser} from '@fortawesome/free-solid-svg-icons';
 import companyInfo  from './data';
 import 'ldrs/ring';
 import { ReactComponent as Loader } from './LOADER/loader.svg'
-//import  ResponseSumbitted  from './Components/ResponseSubmitted.js'
+import ResponsiveDialog from './Components/ResponsiveDialog';
+
 
 function PageTitle(){
     return(
@@ -19,13 +20,7 @@ function PageTitle(){
 function ContactSection(){
 
     const[loading, setLoading] = useState(false);
-    //const[showPopup, setShowPopup] = useState(true);
-
-    /*
-    const MessageSubmitted = () => {
-        <ResponseSumbitted disabled={showPopup}/>
-    }
-    */
+    const[isModalOpen, setModalOpen] = useState(false);
      
 
     const scrollToTop = () => {
@@ -66,6 +61,7 @@ function ContactSection(){
                 console.log('Email successfully sent');
                 setFormData({name: '', email:'', message: ''});
                 setLoading(false);
+                setModalOpen(true);
                 
             } else{ 
                 console.log('Failed to send email');
@@ -97,7 +93,7 @@ function ContactSection(){
             </div>
             <div className="input-group">
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required/>
+                <input type="email" id="email" name="email" style={{height: "24px"}}value={formData.email} onChange={handleChange} required/>
             </div>
             <div className="input-group">
                 <label htmlFor="message">Message:</label>
@@ -115,7 +111,15 @@ function ContactSection(){
             <p>Please feel free to ask any questions</p>
         </div>
         </div>
-        
+
+        <div>
+            {isModalOpen && (
+                <ResponsiveDialog onClose={() => setModalOpen(false)}>
+                    <h2>Contact Form</h2>
+                    <p>Message has been sent Successfully</p>
+                </ResponsiveDialog>
+            )}
+        </div>
         </div>
 
     );

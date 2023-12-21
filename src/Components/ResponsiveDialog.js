@@ -1,45 +1,49 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import React from 'react';
 
-function ResponsiveDialog() {
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
-
-  const[open, setOpen] = React.useState(true);
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
+function ResponsiveDialog({ children, onClose }) {
   return (
-    <React.Fragment>
-      <Dialog open={open}
-        onClose={handleClose}
-        fullScreen={fullScreen}
-        aria-labelledby="responsive-dialog-title"
-      >
-        <DialogTitle id="responsive-dialog-title">
-        </DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            Application has been sent successfully
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Back
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </React.Fragment>
+    <div style={styles.overlay}>
+      <div style={styles.modal}>
+        {children}
+        <button style={styles.closeButton} onClick={onClose}>Back</button>
+
+
+      </div>
+
+    </div>
   );
 }
+
+const styles = {
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1000,
+  },
+  modal: {
+    backgroundColor: 'white',
+    padding: '20px',
+    borderRadius: '8px',
+    position: 'fixed',
+    width: '80%',
+    maxWidth: '500px',
+  },
+  closeButton: {
+    position: 'absolute',
+    top: '10px',
+    right: '10px',
+    background: 'transparent',
+    border: 'none',
+    fontSize: '18px',
+    cursor: 'pointer'
+  }
+};
 
 export default ResponsiveDialog;

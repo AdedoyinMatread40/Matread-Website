@@ -1,19 +1,17 @@
 
-
 .form{
-    min-height: 60vh;
+    height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    margin: 0 auto;
     overflow: hidden;
     font-family: "Playfair Display", serif;
 
 }
 
 .text_field{
-    margin-top: -15%;
+    margin-top: -10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,15 +78,16 @@
 }
 
 .file-upload{
-    margin-top: 100%;
+    margin-top: 90%;
     margin-left: -20%;
-    overflow: hidden;
+    
 }
 
 div.file-upload{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1px;
+    
 }
 
 div.file-upload label{
