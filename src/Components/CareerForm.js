@@ -17,17 +17,17 @@ function CareerForm(){
     const[file, setFile] = useState(null);
     const inputFile = useRef(null);
 
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         setLoading(true);
-
         const formData = new FormData();
+    
         formData.append("name", name);
         formData.append("email", email);
         formData.append("address", address);
         formData.append("phone", phone);
-        formData.append("file", file)
+        formData.append("file", file);
+        
 
         try{
             const response = await fetch ('http://localhost:3001/send-form', {
