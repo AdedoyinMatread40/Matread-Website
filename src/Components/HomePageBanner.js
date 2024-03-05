@@ -9,6 +9,7 @@ const HomePageBanner = () =>
    
         <div className="container">
             <div className="video-container">
+                
                 <video autoPlay loop muted width="100%" id="vid">
                     <source src={backgroundVideo} type="video/mp4" />
                 </video>

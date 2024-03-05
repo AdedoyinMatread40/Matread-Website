@@ -1,4 +1,8 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%; /* full window width */
+}
 .page-title{
   display: flex;
   justify-content: center;
@@ -14,8 +18,67 @@
   
 }
 
+@media screen and (max-width: 530px) {
+  .page-title{
+    width: 120vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 491px) {
+  .page-title{
+    width: 150vw;
+    font-size: 6em !important;
+    
+  }
+
+}
+
+@media screen and (max-width: 422px) {
+  .page-title{
+    width: 170vw;
+    font-size: 8em !important;
+
+  }
+
+}
+
+@media screen and (max-width: 362px) {
+  .page-title{
+    width: 200vw;
+    font-size: 9em !important;
+  }
+
+}
+
+@media screen and (max-width: 314px) {
+  .page-title{
+    width: 270vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 276px) {
+  .page-title{
+    width: 380vw;
+    font-size: 10em !important;
+  }
+
+}
+
+@media screen and (max-width: 127px) {
+  .page-title{
+    width: 380vw;
+    font-size: 7em !important;
+  }
+
+}
+
 .contact-section{
     min-height: 120vh;
+    width: 100%;
     font-family: "Playfair Display", serif;
     display: flex;
     justify-content: flex-end;
@@ -173,14 +236,15 @@
 }
 
 .section-5 {
-  height: 500px;
+  height: 80vh;
+  width: 100%;
   font-family: "Playfair Display", serif;
   color:#e0e0e0;
   font-size: 3.0em;
   display: flex;
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.986);
-  margin-top: 0%;
+  margin-top: 2%;
   position: relative;
   padding: 40px;
   border-radius: 0px;

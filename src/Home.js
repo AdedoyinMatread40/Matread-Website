@@ -12,31 +12,10 @@ import img4 from './images/PICSLIDER3.jpg';
 import img5 from './images/PICSLIDER4.jpg';
 import whiteBack from './images/WHITE3.jpg';
 import HomePageBanner from './Components/HomePageBanner';
+import Footer from './Components/Footer'
 //import backgroundVideo from './videos/background-video-for-home.mp4';
 
 const images = [img1, img2, img3, img4, img5];
-
-/*
-function Section2(){
-  return(
-    <div className="section2">
-      <div className="video-container">
-      <video autoPlay loop muted id="video">
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
-
-      </div>
-        
-        <div id="quote">
-      <p className="quote-text">Alone we can do so little, together we can do so much</p>
-      <p className="quote-author">- Helen Keller</p>
-      </div>
-      
-      </div>
-
-  );
-}
-*/
 
 function Section3(){
   const [current, setCurrent] = useState(0); // [initial image to be shown, function used to update it] 
@@ -100,6 +79,7 @@ function Section4(){
 }
   return(
     <div className="section4">
+      
       {iconSections.map(section => (
         <div className="icon-group" key={section.buttonText}>
           <FontAwesomeIcon className="icon" icon={section.icon} size="6x" />
@@ -109,44 +89,12 @@ function Section4(){
       ))
 
       }
+      
 
        
     </div>
   );
 }
-
-
-
-function Section5(){
-  return(
-    <div className="section5">
-            <div className="companyInfo">
-              {companyInfo && (
-                <>
-                <p className="info">{companyInfo.address}</p>
-                <p className="info">Phone: {companyInfo.phone}</p>
-                <p className="info">Email: {companyInfo.email}</p>
-                
-                </>
-              )}
-            
-
-            <p className="copy-info">&copy; 2023 Matread Care. All rights reserved.</p>
-            </div>
-
-            <div className="vertical-line"></div>
-
-            <div className="add-Ons">
-              
-              <p className="mission">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!</p>
-              
-              </div>        
-
-      </div>
-  );
-}
-
-
 
 function HomePage() {
  
@@ -172,7 +120,7 @@ function HomePage() {
       </div>
 
       <div>
-        <Section5 />
+        <Footer />
       </div>
       
       

@@ -4,6 +4,7 @@ import React, {useState, useRef} from 'react';
 import whiteBack from './images/WHITE3.jpg';
 import companyInfo  from './data';
 import './Services.css';
+import Footer from './Components/Footer'
 
 function PageTitle(){
     return(
@@ -116,36 +117,6 @@ function Programs(){
     );
 }
 
-function Section5(){
-    return(
-        <div className="section-5">
-            <div className="companyInfo">
-              {companyInfo && (
-                <>
-                <p className="info">{companyInfo.address}</p>
-                <p className="info">Phone: {companyInfo.phone}</p>
-                <p className="info">Email: {companyInfo.email}</p>
-                
-                </>
-              )}
-            
-
-            <p className="copy-info">&copy; 2023 Matread Care. All rights reserved.</p>
-            </div>
-
-            <div className="vertical-line"></div>
-
-            <div className="add-Ons">
-              
-              <p className="mission">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!</p>
-              
-              </div>        
-
-      </div>
-    );
-    
-}
-
 function ServicesPage(){
 
     return(
@@ -154,16 +125,8 @@ function ServicesPage(){
             <Section1 />
             <PageTitle />
             <Programs />
-            <Section5 />
+            <Footer />
         </div>
-
-        
-        
-
-
-
-
-
 
     );
 
