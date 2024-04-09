@@ -1,0 +1,125 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card{
+    transition: transform .5s;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card p{
+    text-align: center;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 10%;
+}
+
+.card h2{
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 853px) and (max-height: 1280px){
+    .card{
+        height: 610px;
+    }
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px){
+    .card{
+        height: 620px;
+    }
+}
+
+@media screen and (max-width: 817px){
+    .card{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px){
+    .card{
+        height: 647px;
+    }
+}
+
+@media screen and (max-width: 737px){
+    .card{
+        height: 710px;
+    }
+}
+
+@media screen and (max-width: 651px){
+    .card{
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 611px){
+    .card{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 540px) and (max-height: 720px){
+    .card{
+        height: 857px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .card{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 896px){
+    .card{
+        margin-top: 10%;
+    }
+
+    .card p{
+        font-size: 25px;
+    }
+
+    .card{
+        height: 1000px;
+    }
+
+    .card h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 314px){
+    .card h2{
+        font-size: 46px;
+    }
+
+    .card p{
+        font-size: 40px;
+    }
+
+    .card{
+        height: 2500px;
+    }
+}
+
+
+
+

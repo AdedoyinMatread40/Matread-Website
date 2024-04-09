@@ -12,6 +12,10 @@ import PositionsAvailable from './Components/PositionsAvailable';
 import Section1 from './Section1';
 import Footer from './Components/Footer';
 import AboutDescription from './Components/AboutDescription';
+import JobInfo from './Components/JobInfo';
+import JobDescription from './Components/JobDescription';
+import JobPosting from './Components/JobPosting';
+import NewCareerPage from './Components/NewCareerForm';
 
 function App() {
     
@@ -30,6 +34,10 @@ function App() {
                 <Route path="/section1" element={<Section1 />} />
                 <Route path="/footer" element={<Footer />} />
                 <Route path="/about" element={<AboutDescription />} />
+                <Route path="/job-info" element={<JobInfo />} />
+                <Route path="/job-desc" element={<JobDescription />} />
+                <Route path="/job-post" element={<JobPosting />} />
+                <Route path="/new-career-page" element={<NewCareerPage />} />
             </Routes>
         </Router>
     );

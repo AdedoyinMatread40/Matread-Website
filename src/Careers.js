@@ -1,6 +1,7 @@
 import React from 'react';
 import Section1 from './Section1';
 import CareerForm from './Components/CareerForm.js';
+import JobInfo from './Components/JobInfo.js';
 import companyInfo  from './data';
 import Footer from './Components/Footer'
 
@@ -15,6 +16,7 @@ function CareersPage(){
 
     return(
         <div>
+            Hey there
 
             <div>
                 <Section1 />
@@ -22,6 +24,10 @@ function CareersPage(){
 
             <div>
                 <PageTitle />
+            </div>
+            
+            <div>
+                <JobInfo />
             </div>
 
             <div>

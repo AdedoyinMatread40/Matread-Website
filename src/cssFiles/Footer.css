@@ -184,7 +184,7 @@ hr{
 
 @media screen and (max-width: 375px) {
     .footer{
-        height: 180vh;
+        height: 150vh;
         width: 172vw;
     }
 }
@@ -198,7 +198,7 @@ hr{
 
 @media screen and (max-width: 314px) {
     .footer{
-        width: 280vw;
+        width: 283vw;
         height: 130vh;
        
     }

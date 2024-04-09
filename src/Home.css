@@ -4,9 +4,9 @@
 }
 
 .section1{
-  position: relative;
-  height: 180px;
-  
+  height: 146px;
+  background-color: #ffffff;
+  z-index: 9999;
 }
 
 /* Style for the company logo */
@@ -23,12 +23,20 @@
 
 /* Header container style */
 .header{
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Distributes child elements with space in between */
   padding: 0%;
   height: 100%;
   margin: 0 auto;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* Navbar styling */
@@ -43,6 +51,8 @@
   flex-wrap: no-wrap; /* Prevents wrapping of navbar items */
   display: flex;
   justify-content: space-around;  
+  position: sticky;
+  top: 0;
 }
 
 .navbar .nav-link {
@@ -50,7 +60,7 @@
   font-family: "Playfair Display", serif;
   background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
   text-align: center;
-  padding: 2.0%;
+  padding: 7.0%;
   text-decoration: none;
   font-size: 1.05em;  /* slightly larger text for links */
   transition: 1s background-size;
@@ -120,7 +130,7 @@
   }
 
   .menu-icon{
-    margin-left: -2%;
+    margin-left: 6.7%;
   }
 
 }
@@ -136,7 +146,7 @@
   }
 
   .menu-icon{
-    margin-left: -2%;
+    margin-left: 20.7%;
   }
 
   @media screen and (max-width: 416px) {
@@ -145,7 +155,7 @@
     }
   
     .menu-icon{
-      margin-left: -2%;
+      margin-left: 28%;
     }
 
     @media screen and (max-width: 362px) {
@@ -156,17 +166,23 @@
       .bars{
         transform: scale(1.5);
       }
-
-      @media screen and (max-width: 314px) {
-        .section1{
-          width: 259vw;
-        }
-      
-      }
     
     
     }
   
+  }
+
+}
+
+@media screen and (max-width: 314px) {
+  .section1{
+    width: 259vw;
+  }
+
+  .menu-icon{
+    position: relative;
+    left: 200px;
+    top: 7px;
   }
 
 }
@@ -199,7 +215,6 @@
 
 
   .navbar {
-    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -217,6 +232,12 @@
 
   .responsive_nav{
     transform: none;
+  }
+
+  .section1{
+    position: relative;
+    z-index: 9999;
+    width: 100%;
   }
 
   .navbar ul{
@@ -310,6 +331,12 @@
     width: 130vw;
     height: 120vh;
     
+  }
+
+  @media screen and (max-width: 422px) {
+    .section3{
+      width: 149vw;
+    }
   }
 
   @media screen and (max-width: 416px) {
@@ -466,7 +493,7 @@
   width: 500px;
   height: 400px;
   position: relative; 
-  overflow: hidden; /* This will hide anything that exceeds the width/height of the container. */
+  overflow: hidden; /* This will hide anything that exceeds the width/height of the container. */ 
 }
 
 .carousel-image {
@@ -736,127 +763,3 @@
   color: #ffffff; /* White text on hover */
 }
 
-.section5 {
-  height: 40vh;
-  font-family: "Playfair Display", serif;
-  color:#e0e0e0;
-  font-size: 3.0em;
-  display: flex;
-  align-items: flex-start;
-  background-color: rgba(0, 0, 0, 0.986);
-  margin-top: 0%;
-  position: relative;
-  padding: 40px;
-  border-radius: 0px;
-}
-
-
-@media screen and (max-width: 1230px) {
- 
-
-  .vertical-line{
-    display: none;
-  }
-
-}
-
-
-
-@media screen and (max-width: 1229px) {
-  .section5{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-
-  .mission{
-    width: 70% !important;
-    text-align: center !important;
-    margin-right: 3.7% !important;
-    margin-top: 20% !important;
-    margin-bottom: 45%;
-    font-size: 1.5em;
-    line-height: 1.9em;
-    padding: 1em;
-    border-radius: 10%;
-  }
-
-  .companyInfo{
-    z-index: 1000;
-    width: 50% !important;
-    margin-top: 30% !important;
-    margin-left: 17%;
-    text-align: center !important;
-  }
-
-  
-
-  .copy-info{
-    display: flex;
-    margin-top: 5% !important;
-    margin-left: 13% !important;
-    font-size: 1.5rem;
-  }
-
-  
- 
-  
-}
-
-@media screen and (max-width: 530px) {
-  .section5{
-    width: 100vw;
-    height: 70vh;
-  }
-  
- 
-  
-}
-
-@media screen and (max-width: 519px) {
-  .section5{
-    width: 105vw;
-    height: 100vh;
-  }
-  
-}
-
-.companyInfo{
-  margin-top: 4%;
-  text-align: left;
-  position: absolute;
-  left: 9%;
-}
-.info{
-  font-size: 1.5rem;
-}
-
-.copy-info{
-  display: flex;
-  margin-top: 20%;
-  font-size: 1.5rem;
-}
-
-
-.mission{
-  font-size: 1.5rem;
-  width: 500px;
-  
-}
-
-.mission{
-  position: absolute;
-  right: 8%;
-  text-align: right;
-  margin-top: 3%;
-}
-
-.vertical-line{
-  border-left: 1px solid #ffffff; /* This creates the line */
-  height: 80%; /* Adjust based on how tall you want the line to be */
-  position: absolute;
-  left: 50%; /* Adjust this to move the line left or right */
-  top: 10%; /* Adjust this to move the line up or down */
-  min-height: 100px;  /* You can adjust this value based on your requirements */
-}
