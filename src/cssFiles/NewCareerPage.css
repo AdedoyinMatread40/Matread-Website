@@ -1,13 +1,284 @@
-.form-wrapper{
+div.form-wrapper{
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
+    background-color: #006199;
+}
+
+.form-wrapper h2{
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 form{
+    margin-right: 50px;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 hsl(0, 0%, 74%);
     padding: 20px;
+    height: 800px;
+    background-color: #ffffff;
 }
+
+.main-career-form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.car{
+    margin-top: 70px;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.car input{
+    width: 600px; /* width of the input fields */
+    /* other styles for input fields */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+}
+
+input[type=file]{
+    height: 45px;
+    width: 340px;
+    max-width: 300px;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    margin-left: 10px;
+}
+
+input[type=file]::file-selector-button{
+    border: none;
+    background: #006199;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    font-family: "Playfair Display", serif;
+    
+
+}
+
+#row-file{
+    position: relative;
+}
+
+input[type=file]::file-selector-button:hover{
+    background: #0d45a5;
+}
+
+#submit-form-info{
+    font-size: 1em;
+    font-family: "Playfair Display", serif;
+    padding: 0.75rem 1.5rem; /* Replaces width and height */
+    color: #ffffff; /* Same color as the section background */
+    background-color: #006199; /* Section background color */
+    font-weight: 560; /* Slightly bold font */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Changes the cursor on hover */
+    text-decoration: none; /* Removes underline if the button is a link */
+}
+
+#submit-form-info:hover{
+    background-color: #ffffff; /* Section background color */
+    color: #000000; /* White text on hover */
+}
+
+@media screen and (max-width: 1678px){
+    div.form-wrapper{
+        width: 103vw;
+    }
+}
+
+@media screen and (max-width: 1545px){
+    div.form-wrapper{
+        width: 107vw;
+    }
+}
+
+@media screen and (max-width: 1432px){
+    div.form-wrapper{
+        width: 111.6vw;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 1366px){
+    form{
+        height: 700px;
+        width: 900px;
+        margin-left: 50px;
+    }
+
+    div.form-wrapper{
+        width: 100vw;
+    }
+
+    .car{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px){
+    div.form-wrapper{
+        width: 102vw;
+    }
+  
+    form{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 853px) and (max-height: 1280px){
+    div.form-wrapper{
+        width: 107vw;
+    }
+
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px){
+    div.form-wrapper{
+        width: 110vw;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px){
+    div.form-wrapper{
+        width: 114vw;
+    }
+}
+
+@media screen and (max-width: 752px){
+    .car{
+        margin-top: 40px;
+    }
+
+    .car input{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 612px){
+    .car{
+        margin-top: 30px;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 540px) and (max-height: 720px){
+    div.form-wrapper{
+        width: 142vw;
+        height: 140vh;
+    }
+
+    form{
+        width: 700px;
+        height: 600px;
+    }
+
+    .form-wrapper h2{
+        font-size: 1em;
+    }
+
+    .car{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) and (max-height: 932px){
+    div.form-wrapper{
+        width: 165vw;
+        height: 143vh;
+    }
+
+    form{
+        height: 800px;
+    }
+
+}
+
+@media screen and (max-width: 414px) and (max-height: 896px){
+    div.form-wrapper{
+        width: 168vw;
+    }
+}
+
+@media screen and (max-width: 412px) and (max-height: 915px){
+    div.form-wrapper{
+        width: 169vw;
+    }
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px){
+    div.form-wrapper{
+        width: 174vw;
+    }
+
+    form{
+        height: 700px;
+    }
+
+    .car{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px){
+    div.form-wrapper{
+        width: 178vw;
+    }
+
+    form{
+        width: 600px;
+    }
+
+    .car input{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 360px) and (max-height: 740px){
+    div.form-wrapper{
+        width: 183vw;
+        height: 200vh;
+    }
+
+    form{
+        width: 550px;
+    }
+
+    .car input{
+        width: 390px;
+    }
+
+}
+
+@media screen and (max-width: 280px) and (max-height: 653px){
+    div.form-wrapper{
+        width: 222vw;
+        height: 200vh;
+    }
+
+    .form-wrapper h2{
+        font-size: 2em;
+    }
+
+
+    form{
+        height: 820px;
+    }
+}
+
+
+
+

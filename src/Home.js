@@ -1,5 +1,4 @@
 import './Home.css';
-import companyInfo  from './data';
 import Section1 from './Section1';
 import{ Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';

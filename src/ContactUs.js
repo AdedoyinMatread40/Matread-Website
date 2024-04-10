@@ -9,12 +9,15 @@ import 'ldrs/ring';
 import { ReactComponent as Loader } from './LOADER/loader.svg'
 import ResponsiveDialog from './Components/ResponsiveDialog';
 import Footer from './Components/Footer'
-import ATC from './images/ATCLOGO.jpg';
 
 
 function PageTitle(){
     return(
-     <div className="page-title"><div id="title">Contact Us</div></div>   
+     <div className="page-title">
+        <div id="title">
+            Contact Us
+        </div>
+    </div>   
     );
     
 }

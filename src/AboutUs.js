@@ -1,5 +1,4 @@
 import React from 'react';
-import companyInfo  from './data';
 import Section1 from './Section1.js';
 import AboutDescription from './Components/AboutDescription.js';
 import Footer from './Components/Footer'

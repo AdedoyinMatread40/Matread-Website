@@ -1,13 +1,162 @@
+.job-info-parent{
+    display: flex;
+  justify-content: center; /* Adjusts horizontal alignment */
+  align-items: center; /* Adjusts vertical alignment */
+  width:100%;
+  overflow: hidden;
+ 
+}
+
 .job-info{
+    flex-grow: 1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 800px;
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width:100%;
+    
+}
+
+@media screen and (max-width: 1678px){
+  .job-info-parent{
+      width: 103vw;
+  }
+
+
+}
+
+@media screen and (max-width: 1545px){
+  .job-info-parent{
+    width: 107vw;
+  }
+}
+
+@media screen and (max-width: 1432px){
+  .job-info-parent{
+      width: 111vw;
+  }
+
+
 }
 
 @media screen and (max-width: 1024px) and (max-height: 1366px){
-    .job-info{
-        width: 108vw;
-        
-    }
+  .job-info-parent{
+      width: 100vw;
+  }
+
+
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px){
+  .job-info-parent{
+      width: 102vw;
+  }
+  
+}
+
+@media screen and (max-width: 853px) and (max-height: 1280px){
+  .job-info-parent{
+    width: 107vw;
+  }
+
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px){
+  .job-info-parent{
+    width: 110vw;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px){
+  .job-info-parent{
+    width: 114vw;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 720px){
+  .job-info-parent{
+    width: 142vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 534px){
+  .job-info{
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 430px) and (max-height: 932px){
+  .job-info-parent{
+    width: 164vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 414px) and (max-height: 896px){
+  .job-info-parent{
+    width: 168vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 412px) and (max-height: 915px){
+  .job-info{
+    height: 130vh;
+  }
+
+  .job-info-parent{
+    width: 170vw;
+    
+  }
+
+
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px){
+  .job-info-parent{
+    width: 173vw;
+    
+  }
+
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px){
+  .job-info-parent{
+    width: 178vw;
+    
+  }
+
+  .job-info{
+    height: 148vh;
+  }
+
+}
+
+@media screen and (max-width: 360px) and (max-height: 740px){
+  .job-info-parent{
+    width: 182vw;
+    
+  }
+
+
+}
+
+@media screen and (max-width: 280px) and (max-height: 653px){
+  .job-info-parent{
+    width: 220vw;
+  }
+
+  .job-info{
+    height: 170vh;
+  }
 }

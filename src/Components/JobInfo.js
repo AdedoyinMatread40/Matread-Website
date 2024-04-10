@@ -7,9 +7,11 @@ import whiteBack from '../images/WHITE3.jpg';
 
 function JobInfo(){
     return(
-        <div className="job-info" style={{ backgroundImage: `url(${whiteBack})` }}>
-            <JobDescription />
-            <JobPosting />
+        <div className="job-info-parent">
+            <div className="job-info" style={{ backgroundImage: `url(${whiteBack})` }}>
+                <JobDescription />
+                <JobPosting />
+            </div>
         </div>
 
         
