@@ -1,11 +1,12 @@
 div.form-wrapper{
-    height: 100vh;
+    height: 1000px;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #006199;
     overflow-x: hidden;
+    
 }
 
 .form-wrapper h2{
@@ -449,6 +450,24 @@ input[type=file]::file-selector-button:hover{
 
     .car{
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-height: 440px){
+    div.form-wrapper{
+        height: 250vh;
+    }
+}
+
+@media screen and (max-height: 346px){
+    div.form-wrapper{
+        height: 300vh;
+    }
+}
+
+@media screen and (max-height: 289px){
+    div.form-wrapper{
+        height: 500vh;
     }
 }
 
