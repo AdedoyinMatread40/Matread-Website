@@ -2,7 +2,7 @@ import React from 'react';
 import '../cssFiles/HomePageBanner.css';
 import backgroundVideo from '../videos/correct-vid.mp4';
 
-const HomePageBanner = () =>
+function HomePageBanner()
 {
 
     return (

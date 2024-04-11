@@ -12,6 +12,7 @@ import img5 from './images/PICSLIDER4.jpg';
 import whiteBack from './images/WHITE3.jpg';
 import HomePageBanner from './Components/HomePageBanner';
 import Footer from './Components/Footer'
+import HomeImgBanner from './Components/HomeImageBanner';
 //import backgroundVideo from './videos/background-video-for-home.mp4';
 
 const images = [img1, img2, img3, img4, img5];
@@ -107,7 +108,7 @@ function HomePage() {
       </div>
       
       <div>
-        <HomePageBanner />
+        <HomeImgBanner />
       </div>
       
       <div>

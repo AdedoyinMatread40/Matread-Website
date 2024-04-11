@@ -1,0 +1,72 @@
+.homeimgBan body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 4.5rem;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    place-content: center;
+
+    background: linear-gradient(to right, #006199d7,rgba(253, 250, 250, 0)),
+                url('../images/HABILITATIONIMG.png') no-repeat center center / cover;
+}
+
+.homeimgBan p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1181px){
+    .homeimgBan{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 943px){
+    .homeimgBan body{
+        height: 120vh;
+    }
+}
+
+@media screen and (max-height: 786px){
+    .homeimgBan body{
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 628px){
+    .homeimgBan body{
+        height: 180vh;
+    }
+}
+
+@media screen and (max-height: 530px){
+    .homeimgBan body{
+        height: 210vh;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .homeimgBan body{
+        height: 230vh;
+    }
+}
+
+@media screen and (max-height: 411px){
+    .homeimgBan body{
+        height: 290vh;
+    }
+}
+
+@media screen and (max-height: 326px){
+    .homeimgBan body{
+        height: 330vh;
+    }
+}
+
+@media screen and (max-height: 291px){
+    .homeimgBan body{
+        height: 450vh;
+    }
+}

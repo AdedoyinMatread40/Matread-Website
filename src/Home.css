@@ -304,8 +304,8 @@
 
 @media screen and (max-width: 530px) {
   .section3{
-    width: 95vw;
-    height: 100vh;
+    width: 100vw;
+    height: 160vh;
     
   }
 }
@@ -313,7 +313,7 @@
 @media screen and (max-width: 520px) {
   .section3{
     width: 100vw;
-    height: 100vh;
+    height: 180vh;
     
   }
   #carouselPara{
@@ -329,8 +329,14 @@
 @media screen and (max-width: 491px) {
   .section3{
     width: 130vw;
-    height: 120vh;
+    height: 200vh;
     
+  }
+
+  @media screen and (max-width: 488px) {
+    .section3{
+      width: 132vw;
+    }
   }
 
   @media screen and (max-width: 422px) {
@@ -342,7 +348,7 @@
   @media screen and (max-width: 416px) {
     .section3{
       width: 148vw;
-      height: 200vh;
+      height: 230vh;
       
     }
 
@@ -357,7 +363,7 @@
     @media screen and (max-width: 362px) {
       .section3{
         width: 180vw !important;
-        height: 180vh;
+        height: 260vh;
         
       }
       #carouselPara{
@@ -370,7 +376,7 @@
       @media screen and (max-width: 314px) {
         .section3{
           width: 260vw !important;
-          height: 280vh;
+          height: 290vh;
           
         }
 

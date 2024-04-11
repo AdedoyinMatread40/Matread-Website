@@ -10,7 +10,9 @@ body{
     overflow: hidden;
 }
 
-
+@media screen and (max-height: 981px){
+    
+}
 
 .video-container:before{
     content: "";
