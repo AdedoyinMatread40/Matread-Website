@@ -10,7 +10,7 @@ import img3 from './images/PICSLIDER2.jpg';
 import img4 from './images/PICSLIDER3.jpg';
 import img5 from './images/PICSLIDER4.jpg';
 import whiteBack from './images/WHITE3.jpg';
-import HomePageBanner from './Components/HomePageBanner';
+//import HomePageBanner from './Components/HomePageBanner';
 import Footer from './Components/Footer'
 import HomeImgBanner from './Components/HomeImageBanner';
 //import backgroundVideo from './videos/background-video-for-home.mp4';
