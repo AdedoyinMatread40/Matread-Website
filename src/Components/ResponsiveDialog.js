@@ -28,6 +28,7 @@ const styles = {
     zIndex: 1000,
   },
   modal: {
+    fontFamily: `Playfair Display, Georgia, serif`,
     backgroundColor: 'white',
     padding: '20px',
     borderRadius: '8px',
@@ -36,6 +37,7 @@ const styles = {
     maxWidth: '500px',
   },
   closeButton: {
+    fontFamily: `Playfair Display, Georgia, serif`,
     position: 'absolute',
     top: '10px',
     right: '10px',

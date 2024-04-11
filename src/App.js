@@ -7,7 +7,6 @@ import ContactUsPage from './ContactUs';
 import ServicesPage from './Services';
 import HomePageBanner from './Components/HomePageBanner';
 import ResponsiveDialog from './Components/ResponsiveDialog';
-import CareerForm from './Components/CareerForm';
 import PositionsAvailable from './Components/PositionsAvailable';
 import Section1 from './Section1';
 import Footer from './Components/Footer';
@@ -29,7 +28,6 @@ function App() {
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/video" element={<HomePageBanner />} />
                 <Route path="/dialog" element={<ResponsiveDialog />} />
-                <Route path="/career-form" element={<CareerForm />} />
                 <Route path="/position" element={<PositionsAvailable />} />
                 <Route path="/section1" element={<Section1 />} />
                 <Route path="/footer" element={<Footer />} />
