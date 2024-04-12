@@ -11,10 +11,19 @@ function JobPosting()
     };
 
     useEffect(() => {
+        const handleTouchMove = (e) => {
+            if(modalCertsOpen)
+            {
+                e.preventDefault();
+            }
+        };
+
         document.body.style.overflow = modalCertsOpen ? "hidden" : "auto";
+        document.addEventListener('touchmove', handleTouchMove, { passive: false });
 
         return () => {
             document.body.style.overflow = "auto";
+            document.removeEventListener('touchmove', handleTouchMove, { passive: false });
 
         };
     }, [modalCertsOpen]);

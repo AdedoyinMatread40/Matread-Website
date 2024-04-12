@@ -16,9 +16,19 @@ function NewCareerPage()
     const inputFile = useRef(null);
 
     useEffect(() => {
+
+        const handleTouchMove = (e) => {
+            if(isModalOpen)
+            {
+                e.preventDefault();
+            }
+        };
+
         document.body.style.overflow = isModalOpen ? "hidden" : "auto";
+        document.addEventListener('touchmove', handleTouchMove, {passive: false});
 
         return () => {
+            document.removeEventListener('touchmove', handleTouchMove, {passive: false});
             document.body.style.overflow = "auto";
 
         };
