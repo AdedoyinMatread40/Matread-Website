@@ -16,6 +16,7 @@ import JobDescription from './Components/JobDescription';
 import JobPosting from './Components/JobPosting';
 import NewCareerPage from './Components/NewCareerForm';
 import HomeImgBanner from './Components/HomeImageBanner';
+import NewContactUs from './Components/NewContactUs';
 
 function App() {
     
@@ -38,6 +39,7 @@ function App() {
                 <Route path="/job-post" element={<JobPosting />} />
                 <Route path="/new-career-page" element={<NewCareerPage />} />
                 <Route path="/home-banner-img" element={<HomeImgBanner />} />
+                <Route path="/new-contact-us" element={<NewContactUs />} />
             </Routes>
         </Router>
     );

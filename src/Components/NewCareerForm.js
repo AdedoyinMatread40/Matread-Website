@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import '../cssFiles/NewCareerPage.css';
 import { Form } from 'react-bootstrap'
 import { ReactComponent as Loader } from '../LOADER/loader.svg'
@@ -14,6 +14,15 @@ function NewCareerPage()
     const[phone, setPhone] = useState("");
     const[file, setFile] = useState(null);
     const inputFile = useRef(null);
+
+    useEffect(() => {
+        document.body.style.overflow = isModalOpen ? "hidden" : "auto";
+
+        return () => {
+            document.body.style.overflow = "auto";
+
+        };
+    }, [isModalOpen]);
 
     const handleSubmit = async (event) => {
         event.preventDefault();

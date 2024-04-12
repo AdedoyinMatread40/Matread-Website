@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../cssFiles/JobPosting.css'
 import ResponsiveDialog from './ResponsiveDialog.js';
 
@@ -9,6 +9,15 @@ function JobPosting()
     const handleCerts= () =>{
         setModalCertsOpen(true);
     };
+
+    useEffect(() => {
+        document.body.style.overflow = modalCertsOpen ? "hidden" : "auto";
+
+        return () => {
+            document.body.style.overflow = "auto";
+
+        };
+    }, [modalCertsOpen]);
 
 
     return(
@@ -25,8 +34,8 @@ function JobPosting()
                     <ResponsiveDialog onClose={() => setModalCertsOpen(false)}>
                         <h1 className="certpopup-heading" style={{fontFamily: `Playfair Display, Georgia, serif`}}>Certifications Needed</h1>
                         <br></br>
-                        <p>First Aid/CPR</p>
-                        <p >Article 9</p>
+                        <p>- First Aid/CPR</p>
+                        <p>- Article 9</p>
                         <br></br>
                         <p>The form to apply is below!</p>
                     </ResponsiveDialog>

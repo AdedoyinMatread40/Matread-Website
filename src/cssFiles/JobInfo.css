@@ -52,6 +52,13 @@
   }
 }
 
+@media screen and (max-height: 828px){
+  .job-info{
+    height: 150vh;
+  }
+
+}
+
 @media screen and (max-width: 422px){
   .job-info-parent{
       width: 170vw;
@@ -94,6 +101,13 @@
   .job-info{
     height: 300vh;
   }
+}
+
+@media screen and (max-height: 558px){
+  .job-info{
+    height: 180vh;
+  }
+
 }
 
 @media screen and (max-width: 277px){
