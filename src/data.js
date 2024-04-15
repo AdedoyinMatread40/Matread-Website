@@ -1,6 +1,7 @@
 const companyInfo = {
     address: '3021 S Valerie Dr, AZ 85286',
-    phone: '302-669-5402',
+    phone1: '302-669-5402',
+    phone2: '215-294-0792',
     email: 'matreadcare@gmail.com'
 };
 

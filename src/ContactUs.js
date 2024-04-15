@@ -3,6 +3,7 @@ import './ContactUs.css';
 import 'ldrs/ring';
 import NewContactUs from './Components/NewContactUs';
 import Footer from './Components/Footer'
+import ContactForm from './Components/ContactForm';
 
 
 function PageTitle(){
@@ -33,6 +34,10 @@ function ContactUsPage(){
       <div>
         <NewContactUs />
       </div>  
+
+      <div>
+        <ContactForm />
+      </div>
 
       <div>
         <Footer />

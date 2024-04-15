@@ -1,0 +1,78 @@
+.main-contact{
+    position: relative;
+    top: 200px;
+    left: 110px;
+}
+
+
+.contact-info{
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.icon-home{
+    color: #006199;
+    left: 3000px;
+    margin-bottom: 2em;
+    z-index: 1000;
+    
+}
+
+.plus-info{
+    margin-top: 9em;
+    position: relative;
+    text-align: center;
+    position: relative;
+    right: 137px;
+    bottom: 500px;
+
+}
+  
+.plus-info p{
+    font-size: 1.8rem;  /* Change this value to your desired font size */
+    margin: 2em 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+  
+.dots{
+    text-indent: -1em;
+    overflow: hidden;
+    padding-right: 1em;
+}
+
+
+@media screen and (max-width: 1024px) and (max-height: 1366px){
+    .main-contact{
+        left: 145px;
+    }
+}
+
+
+@media screen and (max-width: 912px) and (max-height: 1368px){
+    .main-contact{
+        left: 145px;
+    }
+}
+
+@media screen and (max-width: 314px){
+    .icon-home{
+        margin-left: 156px;
+    }
+    .plus-info p{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 280px) and (max-height: 653px){
+    .icon-home{
+        margin-left: 97px;
+    }
+    .plus-info p{
+        font-size: 1.7em;
+    }
+  
+}
