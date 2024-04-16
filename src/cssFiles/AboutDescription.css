@@ -129,10 +129,43 @@
 
 }
 
+@media screen and (max-width: 1024px) and (max-height: 1366px){
+    .about-2{
+        margin-top: 400px;
+    }
+
+    #second_img{
+        position: relative;
+        top: 90px;
+    }
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px){
+    .about-2{
+        margin-top: 400px;
+    }
+
+    #second_img{
+        position: relative;
+        top: 90px;
+    }
+}
+
 @media screen and (max-width: 875px){
     .about-2 p{
         position: relative;
         bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 853px) and (max-height: 1280px){
+    .about-2{
+        margin-top: 400px;
+    }
+
+    #second_img{
+        position: relative;
+        top: 10px;
     }
 }
 
@@ -157,6 +190,13 @@
     }
 }
 
+@media screen and (max-width: 820px) and (max-height: 1180px){
+    .about-con{
+        height: 120vh;
+    }
+
+}
+
 @media screen and (max-width: 616px){
     .about-2{
         margin-top: 220px;
@@ -169,6 +209,17 @@
     .hero-content2 p{
         
         font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 540px) and (max-height: 720px){
+    .about-1 .about-info-1-image{
+        position: relative;
+        right: 40px;
+     }
+
+     .about-con{
+        height: 250vh;
     }
 }
 
@@ -239,6 +290,7 @@
     }
 
     .about-2{
+        margin-top: 100px;
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
@@ -254,7 +306,7 @@
     #second_img{
         position: relative;
         top: 10px;
-        left: 55px;
+        left: 130px;
         margin: 0;
         padding: 0;
     }
@@ -311,15 +363,42 @@
 @media screen and (max-width: 414px) and (max-height: 896px){
     .about-con{
         width: 168vw;
-        height: 140vh;
+        height: 180vh;
+    }
+
+    .about-1 .about-info-1-image{
+        position: relative;
+        margin-right: 250px;
+        width: 300px;
+     }
+
+    .about-2 .about-info-2-image{
+        position: relative;
+        width: 300px;
+        top: 10px;
+        margin-right: 500px;
         
     }
 }
 
 @media screen and (max-width: 412px) and (max-height: 915px){
     .about-con{
-        width: 165vw;
-        height: 150vh;
+        width: 170vw;
+        height: 170vh;
+        
+    }
+
+    .about-1 .about-info-1-image{
+        position: relative;
+        margin-right: 250px;
+        width: 300px;
+     }
+
+    .about-2 .about-info-2-image{
+        position: relative;
+        width: 300px;
+        top: 10px;
+        margin-right: 500px;
         
     }
 }
