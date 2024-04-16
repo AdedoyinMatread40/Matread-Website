@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 491px){
     .footer{
-        width: 152vw;
+        width: 153vw;
         height: 70vh;
     }
 }
@@ -194,7 +194,7 @@ hr{
 
 @media screen and (max-width: 362px) {
     .footer{
-        width: 200vw;
+        width: 202vw;
        
     }
 }
@@ -219,7 +219,25 @@ hr{
     .footer{
         width: 400vw;
         height: 130vh;
+    }
+
+    h4{
+        font-size: 6rem !important;
+    }
+    
+
+    .sb_footer-links_div p{
+        font-size: 4rem !important;
+        margin-top: 70px;
        
+
+    }
+    
+    
+    
+    .sb_footer-copyright p{
+        font-size: 4rem;
+        
     }
 }
 

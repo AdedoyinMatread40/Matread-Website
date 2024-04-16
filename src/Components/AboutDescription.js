@@ -8,11 +8,11 @@ function AboutDescription (){
 
 
     return(
-        <div className="about-con">
-            <div className="major-content" style={{ backgroundImage: `url(${whiteBack})`}}>
+        <div className="about-con" style={{ backgroundImage: `url(${whiteBack})`}}>
+            <div className="major-content">
              <div className="about-1">
                 <div className="hero-content">
-                    <h2>Welcome To Our Website</h2>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!</p>
                 </div>
                 <div className="about-info-1-image">

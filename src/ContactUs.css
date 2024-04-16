@@ -60,9 +60,9 @@ body{
 
 }
 
-@media screen and (max-width: 276px) {
+@media screen and (max-width: 277px) {
   .page-title{
-    width: 380vw;
+    width: 400vw;
     font-size: 10em !important;
   }
 

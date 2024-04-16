@@ -12,7 +12,7 @@ function ContactInfo()
             <div className="main-contact">
                 <FontAwesomeIcon className="icon-home" icon={faHouseUser}  size="7x" color="blue"/>
                 <div className="plus-info">
-                    <p>Office Number:</p>
+                    <p>Office Numbers:</p>
                     <p>{companyInfo.phone1}</p>
                     <p>{companyInfo.phone2}</p>
                     <p className="dots">....................................................................</p>
