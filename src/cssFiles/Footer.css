@@ -29,7 +29,6 @@
 
 .footer{
     background-color: rgba(0, 0, 0, 0.986);
-    min-height: 40vh;
 }
 
 .sb_footer{
@@ -121,7 +120,12 @@ hr{
         justify-content: left;
     }
 
+}
 
+@media screen and (max-width: 430px) and (max-height: 932px){
+    .footer{
+        width: 154vw;
+    }
 }
 
 @media screen and (max-width: 422px) {

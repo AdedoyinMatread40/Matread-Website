@@ -436,8 +436,8 @@
 
 @media screen and (max-width: 375px) and (max-height: 667px){
     .about-con{
-        width: 175vw;
-        height: 175vh;
+        width: 181vw;
+        height: 250vh;
     }
 
     .footer{
@@ -461,11 +461,15 @@
 @media screen and (max-width: 360px) and (max-height: 740px){
     .about-con{
         width: 193vw;
-        height: 175vh;
+        height: 190vh;
+    }
+
+    .about-2{
+        margin-top: 100px;
     }
 
     .footer{
-        height: 180vh;
+        height: 170vh;
     }
 }
 
@@ -486,6 +490,16 @@
 @media screen and (max-height: 579px){
     .about-con{
         height: 210vh;
+    }
+}
+
+@media screen and (max-width: 344px) and (max-height: 882px){
+    .about-2{
+        margin-top: 200px;
+    }
+
+    .about-con{
+        height: 170vh;
     }
 }
 
