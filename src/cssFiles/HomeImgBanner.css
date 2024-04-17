@@ -1,3 +1,7 @@
+.homeimgBan{
+    overflow-x: hidden;
+}
+
 .homeimgBan body{
     height: 100vh;
     width: 100vw;
@@ -8,7 +12,6 @@
     display: grid;
     place-items: center;
     place-content: center;
-    overflow-x: hidden;
 
     background: linear-gradient(to right, #006199d7,rgba(253, 250, 250, 0)),
                 url('../images/HABILITATIONIMG.png') no-repeat center center / cover;
