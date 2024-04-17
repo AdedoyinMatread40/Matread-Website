@@ -1,7 +1,6 @@
 
 .section_padding{
     padding: 5rem 4rem;
-
 }
 
 @media screen and (max-width: 530px){
@@ -30,7 +29,7 @@
 
 .footer{
     background-color: rgba(0, 0, 0, 0.986);
-    position: static;
+    min-height: 40vh;
 }
 
 .sb_footer{
@@ -255,6 +254,10 @@ hr{
        
        
     }
+}
+
+@media screen and (max-height: 424px){
+    
 }
 
 
