@@ -76,7 +76,7 @@ const iconSections = [
 function Section4(){
   const scrollToTop = () => {
     window.scrollTo(0, 0)
-}
+  }
   return(
     <div className="section4">
       

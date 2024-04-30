@@ -17,6 +17,7 @@ const scrollToTop = () => {
 function Section1() {
   const[scroll, setScroll] = useState(false);
   const[width, setWidth] = useState(window.innerWidth);
+  const[navBar, setNavbarShow] = useState(false);
 
   const navRef = useRef();
 
@@ -29,17 +30,37 @@ function Section1() {
       setWidth(window.innerWidth);
     };
 
+    const handleTouchMove = (e) => {
+      if(navBar)
+      {
+          e.preventDefault();
+      }
+    };
+
+    document.body.style.overflow = navBar ? "hidden" : "auto";
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      document.body.style.overflow = "auto";
+      document.removeEventListener('touchmove', handleTouchMove, { passive: false });
 
     };
 
-  }, []);
+  }, [navBar]);
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+    if(!navBar)
+    {
+      setNavbarShow(true);
+    }
+    else
+    {
+      setNavbarShow(false);
+    }
   }
   
   return (

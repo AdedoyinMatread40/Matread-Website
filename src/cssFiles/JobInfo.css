@@ -47,8 +47,8 @@
 
 
 @media screen and (max-width: 430px) and (max-height: 932px){
-  .job-info{
-    height: 120vh;
+  .job-info-parent{
+    width: 154vw;
   }
 }
 

@@ -178,15 +178,19 @@ hr{
     }
 }
 
+@media screen and (max-width: 390px) and (max-height: 844px){
+    .footer{
+      width: 171vw;
+      
+    }
+}
+
 @media screen and (max-width: 390px) {
     .footer{
       height: 143vh;
       
     }
-  
-    
-  
-  }
+}
 
 @media screen and (max-width: 375px) {
     .footer{

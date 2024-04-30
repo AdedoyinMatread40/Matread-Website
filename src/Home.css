@@ -491,6 +491,21 @@ body{
 
 }
 
+@media screen and (max-width: 430px) and (max-height: 932px){
+  .section3{
+    width: 133vw;
+    
+  }
+}
+
+
+@media screen and (max-width: 414px) and (max-height: 896px){
+  .section3{
+    width: 150vw;
+    
+  }
+}
+
 @media screen and (max-width: 412px) and (max-height: 915px){
   .section3{
     width: 150vw;
@@ -500,7 +515,7 @@ body{
 
 @media screen and (max-width: 390px) and (max-height: 844px){
   .section3{
-    width: 150vw;
+    width: 151vw;
     
   }
 }
