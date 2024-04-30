@@ -17,8 +17,6 @@ import HomeImgBanner from './Components/HomeImageBanner';
 
 const images = [img1, img2, img3, img4, img5];
 
-const hello = "Hello";
-
 function Section3(){
   const [current, setCurrent] = useState(0); // [initial image to be shown, function used to update it] 
 
