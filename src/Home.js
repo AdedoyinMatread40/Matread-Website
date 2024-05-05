@@ -34,7 +34,7 @@ function Section3(){
     <div className="section3" style={{ backgroundImage: `url(${whiteBack})` }}>
         <div className="header_3">Welcome</div>
         <div className="header_3">........</div> 
-      <p id="carouselPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!</p>
+      <p id="carouselPara">At Matread Care, we believe everyone deserves a place to call home. Our dedicated team provides a warm, safe, and supportive environment for residents to thrive. We offer personalized care, engaging activities, and a community-oriented atmosphere that fosters health, happiness, and overall well-being. Explore our services and find out how we can help you or your loved ones live a fuller, more joyful life</p>
         <div className="carousel-container">
           {images.map((img, index) => ( //maps over each image in the images array to render
                 <img 
@@ -55,19 +55,19 @@ function Section3(){
 const iconSections = [
   {
     icon: faQuestionCircle,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!',
+    text: 'Want to know more about us? Discover our story and the values that guide our care. We are dedicated to creating a nurturing environment that feels like home',
     link: '/about-us',
     buttonText: 'About Us'
   },
   {
     icon: faListCheck,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!',
+    text: 'Explore our wide range of services designed to support the well-being of each resident. From daily assistance to personalized care plans, see how we can meet your needs',
     link: '/services',
     buttonText: 'Services'
   },
   {
     icon: faPhone,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, neque doloribus!',
+    text: 'Have questions or need to discuss specific care options? Our friendly team is here to help. Contact us today for more information or to schedule a visit',
     link: '/contact-us',
     buttonText: 'Contact Us'
   }

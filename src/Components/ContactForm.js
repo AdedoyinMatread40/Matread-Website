@@ -51,6 +51,10 @@ function ContactForm()
 
     const handleSubmit = async (event) => { //when the submit button is clicked, this get triggered
         event.preventDefault(); //stops the refresh of the page when a form is submitted to send a request to the server
+        if (!formData.email.match(/^\S+@\S+\.\S+$/)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
 
         
         try{

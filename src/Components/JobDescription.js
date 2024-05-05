@@ -8,9 +8,9 @@ function JobDescription()
             
 
             <p className="job-info-desc"> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam rem unde esse repudiandae sequi facilis, 
-                modi dolore minus consectetur inventore officia libero cum aspernatur corporis dolores optio, 
-                neque doloribus!
+                Join our dedicated team at Matread Care and make a difference every day
+                Explore our current job openings and find an opportunity where your skills and passion can come to life in a rewarding career. 
+                Together, we can continue to deliver compassion and excellence in all we do
             </p>
 
             

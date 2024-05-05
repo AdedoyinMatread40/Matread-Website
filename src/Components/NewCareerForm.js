@@ -35,7 +35,14 @@ function NewCareerPage()
     }, [isModalOpen]);
 
     const handleSubmit = async (event) => {
+        
         event.preventDefault();
+        if(!email.match(/^\S+@\S+\.\S+$/))
+        {
+            alert('Please Enter a valid email address');
+            return;
+        }
+        
         setLoading(true);
         const formData = new FormData();
     
