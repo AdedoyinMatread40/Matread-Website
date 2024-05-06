@@ -137,11 +137,6 @@ if(cluster.isMaster)
         body('email').isEmail().withMessage('Invalid email format.').normalizeEmail(),
         body('address').trim().escape().isLength({ min: 1 }).withMessage('Address cannot be empty.'),
         body('phone').trim().escape().matches(/^\d{10}$/).withMessage('Phone number must be 10 digits.'),
-        body('file').custom((value, { req }) => {
-            if (!req.file) throw new Error('File upload is required');
-            // Additional checks based on file type or size can be implemented here.
-            return true;
-        })
     ], async (req, res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {

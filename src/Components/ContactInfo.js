@@ -15,6 +15,7 @@ function ContactInfo()
                     <p>Office Numbers:</p>
                     <p>{companyInfo.phone1}</p>
                     <p>{companyInfo.phone2}</p>
+                    <p>{companyInfo.email}</p>
                     <p className="dots">....................................................................</p>
                     <p>Please feel free to ask any questions</p>
                 </div>

@@ -43,8 +43,10 @@ function JobPosting()
                     <ResponsiveDialog onClose={() => setModalCertsOpen(false)}>
                         <h1 className="certpopup-heading" style={{fontFamily: `Playfair Display, Georgia, serif`}}>Certifications Needed</h1>
                         <br></br>
-                        <p>- First Aid/CPR</p>
+                        <p>- First Aid/CPR (Adult / Child)</p>
                         <p>- Article 9</p>
+                        <p>- Prevention and Support</p>
+                        <p>- Level 1 Fingerprint Clearance Card</p>
                         <br></br>
                         <p>The form to apply is below!</p>
                     </ResponsiveDialog>

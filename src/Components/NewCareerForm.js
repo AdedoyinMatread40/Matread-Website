@@ -67,6 +67,7 @@ function NewCareerPage()
                 setPhone("");
                 setLoading(false);
                 setModalOpen(true);
+                setFile(null);
 
                 if(inputFile.current){
                     inputFile.current.value = "";
@@ -76,10 +77,14 @@ function NewCareerPage()
             }
             else{
                 console.log("Failed to send form");
+                const errorData = await response.json();
+                console.error("Failed to send form", errorData);
+                alert(`Error: ${errorData.errors.map(err => err.msg).join(", ")}`);
                 setName("");
                 setEmail("");
                 setAddress("");
                 setPhone("");
+                setFile(null);
                 setLoading(false);
                 if(inputFile.current){
                     inputFile.current.value = "";
@@ -109,7 +114,7 @@ function NewCareerPage()
                     </div>
                     <div className="car row2">
                         <label htmlFor="phone">Phone: </label>
-                        <input type="tel" id="row-phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(XXX)-XXX-XXX" required/>
+                        <input type="tel" id="row-phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(XXX)-XXX-XXXX" required/>
                     </div>
 
                     <div className="car row3">
