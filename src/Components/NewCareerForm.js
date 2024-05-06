@@ -60,7 +60,6 @@ function NewCareerPage()
             });
 
             if(response.status === 200){
-                console.log("Form sent succesfully");
                 setName("");
                 setEmail("");
                 setAddress("");
@@ -76,9 +75,7 @@ function NewCareerPage()
                 }
             }
             else{
-                console.log("Failed to send form");
                 const errorData = await response.json();
-                console.error("Failed to send form", errorData);
                 alert(`Error: ${errorData.errors.map(err => err.msg).join(", ")}`);
                 setName("");
                 setEmail("");

@@ -70,13 +70,12 @@ function ContactForm()
             if(response.status === 200)
             {
                 scrollToTop();
-                console.log('Email successfully sent');
                 setFormData({name: '', email:'', message: ''});
                 setLoading(false);
                 setModalOpen(true);
                 
             } else{ 
-                console.log('Failed to send email');
+                alert('Failed to send the application, if the problem persists, send an email directly to matreadcare@gmail.com');
                 setLoading(false);
             }
         } catch (error){
