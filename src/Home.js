@@ -67,7 +67,7 @@ const iconSections = [
   },
   {
     icon: faPhone,
-    text: 'Have questions or need to discuss specific care options? Our friendly team is here to help. Contact us today for more information or to schedule a visit',
+    text: 'Have questions or need to discuss specific care options? Our friendly team is here to help. Contact us today for more information',
     link: '/contact-us',
     buttonText: 'Contact Us'
   }
