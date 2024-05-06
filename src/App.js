@@ -5,20 +5,6 @@ import AboutUsPage from './AboutUs'
 import CareersPage from './Careers';
 import ContactUsPage from './ContactUs';
 import ServicesPage from './Services';
-import HomePageBanner from './Components/HomePageBanner';
-import ResponsiveDialog from './Components/ResponsiveDialog';
-import PositionsAvailable from './Components/PositionsAvailable';
-import Section1 from './Section1';
-import Footer from './Components/Footer';
-import AboutDescription from './Components/AboutDescription';
-import JobInfo from './Components/JobInfo';
-import JobDescription from './Components/JobDescription';
-import JobPosting from './Components/JobPosting';
-import NewCareerPage from './Components/NewCareerForm';
-import HomeImgBanner from './Components/HomeImageBanner';
-import NewContactUs from './Components/NewContactUs';
-import ContactInfo from './Components/ContactInfo';
-import ContactForm from './Components/ContactForm';
 
 function App() {
     
@@ -30,20 +16,6 @@ function App() {
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/contact-us" element={<ContactUsPage />} />
                 <Route path="/careers" element={<CareersPage />} />
-                <Route path="/video" element={<HomePageBanner />} />
-                <Route path="/dialog" element={<ResponsiveDialog />} />
-                <Route path="/position" element={<PositionsAvailable />} />
-                <Route path="/section1" element={<Section1 />} />
-                <Route path="/footer" element={<Footer />} />
-                <Route path="/about" element={<AboutDescription />} />
-                <Route path="/job-info" element={<JobInfo />} />
-                <Route path="/job-desc" element={<JobDescription />} />
-                <Route path="/job-post" element={<JobPosting />} />
-                <Route path="/new-career-page" element={<NewCareerPage />} />
-                <Route path="/home-banner-img" element={<HomeImgBanner />} />
-                <Route path="/new-contact-us" element={<NewContactUs />} />
-                <Route path="/contact-info" element={<ContactInfo />} />
-                <Route path="/contact-form" element={<ContactForm />} />
             </Routes>
         </Router>
     );
